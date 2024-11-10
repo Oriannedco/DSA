@@ -1,3 +1,5 @@
+	Le programme permet de signer un message ou de vérifier une signature via DSA. Le niveau de sécurité utilisé est obsolète ( 80 bits ). 
+
 - Algorithmes utilisés : 
 	
 	- La classe BigInteger est utilisée afin de stocker des grands nombres et de les manipuler plus facilement. 
