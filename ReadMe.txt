@@ -1,4 +1,16 @@
-	Le programme permet de signer un message ou de vérifier une signature via DSA. Le niveau de sécurité utilisé est obsolète ( 80 bits ). 
+Le programme permet de signer un message ou de vérifier une signature via DSA. Le niveau de sécurité utilisé est obsolète ( 80 bits ). 
+
+- Execution du programme :
+
+Au lancement il est demandé à l'utilisateur de spécifier quel mode il souhaite utiliser. Il y a 3 possibilités : signature, verification et test. 
+
+Si l'utilisateur choisit la signature il lui est alors demandé s'il souhaite signer le texte par défaut ( alice.txt ) ou un texte de son choix auquel cas il lui faudra indiquer le chemin pour accéder à ce texte. Le programme va ensuite afficher dans le terminal la signature (r,s) ainsi que la clé publique associée. 
+
+Si l'utilisateur choisit la vérification il lui est alors demandé de fournir la signature à vérifier ainsi que la clé publique associée. Il est ensuite demandé à l'utilisateur si la vérification concerne le texte par défaut ( alice.txt ) ou un texte de son choix auquel cas il lui faudra indiquer le chemin pour accéder à ce texte. 
+
+Enfin si l'utilisateur choisit l'option test il lui est demandé s'il souhaite effectuer le test par défaut ( 10 000 signatures puis vérifications sur alice.txt ) ou un test personnalisé. Pour le deuxième choix il est ensuite demandé à l'utilisateur d'indiquer le chemin du texte à utiliser pour le test ainsi que le nombre de signatures/vérifications à effectuer. 
+
+Le programme permet de signer un message ou de vérifier une signature via DSA. Le niveau de sécurité utilisé est obsolète ( 80 bits ). 
 
 - Algorithmes utilisés : 
 	
@@ -47,16 +59,6 @@
 		- timeVerif(String message, int nombreTest) : retourne le temps en secondes pour effectuer nombreTest vérifications associées au texte message.
 
 		- timeVerif() : retourne le temps en secondes pour effectuer 10 000 vérifications sur alice.txt.
-
-	- Execution du programme :
-
-		Au lancement il est demandé à l'utilisateur de spécifier quel mode il souhaite utiliser. Il y a 3 possibilités : signature, verification et test. 
-	Si l'utilisateur choisit la signature il lui est alors demandé s'il souhaite signer le texte par défaut ( alice.txt ) ou un texte de son choix auquel cas il lui faudra indiquer le chemin pour accéder à ce texte. Le programme va ensuite afficher dans le terminal la signature (r,s) ainsi que la clé publique associée. 
-	Si l'utilisateur choisit la vérification il lui est alors demandé de fournir la signature à vérifier ainsi que la clé publique associée. Il est ensuite demandé à l'utilisateur si la vérification concerne le texte par défaut ( alice.txt ) ou un texte de son choix auquel cas il lui faudra indiquer le chemin pour accéder à ce texte. 
-	Enfin si l'utilisateur choisit l'option test il lui est demandé s'il souhaite effectuer le test par défaut ( 10 000 signatures puis vérifications sur alice.txt ) ou un test personnalisé. Pour le deuxième choix il est ensuite demandé à l'utilisateur d'indiquer le chemin du texte à utiliser pour le test ainsi que le nombre de signatures/vérifications à effectuer. 
-
-
-- Procédure et temps mis pour effectuer 10 000 signatures/vérifications sur alice.txt : 
 
 	Il faut lancer le programme, écrire "test" dans la console puis "oui".
 
